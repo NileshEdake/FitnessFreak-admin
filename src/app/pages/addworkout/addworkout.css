@@ -1,0 +1,123 @@
+/* General Layout */
+.formpage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Workout Form */
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Exercise Form */
+div > h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.exercises {
+  margin-top: 30px;
+}
+
+.exercise {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.exercise img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  font-size: 14px;
+  width: auto;
+  margin-top: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .formpage {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  textarea,
+  input[type="number"],
+  input[type="file"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .exercise {
+    padding: 10px;
+  }
+}
